@@ -6,7 +6,7 @@ while (capture.isOpened()):
 	ret, frame = capture.read()
 	if (ret == True):
 		#Aplicar Canny
-		bordeCanny = cv2.Canny(frame,100,200)
+		bordeCanny = cv2.Canny(frame,30,250)
 		#Mostrar imágenes
 		cv2.imshow('Original', frame)
 		cv2.imshow('Canny', bordeCanny)
