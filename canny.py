@@ -1,6 +1,6 @@
 #Bibliotecas
 import cv2
-
+#Capturar información de la webCam
 capture = cv2.VideoCapture(0)
 while (capture.isOpened()):
 	ret, frame = capture.read()
